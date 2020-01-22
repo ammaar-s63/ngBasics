@@ -1,5 +1,12 @@
-var myApp = angular.module('myApp', []);
+var myApp = angular.module('myApp', ['ngResource']);
 
-myApp.controller('mainController', ['$scope', function($scope) {
+myApp.controller('mainController', ['$scope', '$filter', function($scope, $filter) {
   $scope.name = "";
+
+  $scope.lowercaseName = function() {
+
+    return $filter('lowercase')($scope.name)
+
+  };
+
 }]);
