@@ -1,10 +1,11 @@
-var myApp = angular.module('myApp', ['ngMessages', 'ngResources']);
+var myApp = angular.module('myApp', ['ngMessages', 'ngResource']);
 
-myApp.controller('mainController', function($scope, $log, $filter) {
+myApp.controller('mainController', function($scope, $log, $filter, $resource) {
+  console.log($resource);
 
-  $scope.name = "rana ali ammaar";
-  $scope.formattedName = $filter("uppercase")($scope.name);
-
-  $log.error($scope.formattedName);
-
+  var arr = [1,
+            '2',
+            function() { alert('Hello World!.') }
+    ]
+  arr[2]();
 });
