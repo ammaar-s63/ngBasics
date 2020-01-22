@@ -1,11 +1,5 @@
 var myApp = angular.module('myApp', ['ngMessages', 'ngResource']);
 
-myApp.controller('mainController', function($scope, $log, $filter, $resource) {
-  console.log($resource);
+myApp.controller('mainController', ['$scope', '$log', '$filter', function($scope, $log, $filter) {
 
-  var arr = [1,
-            '2',
-            function() { alert('Hello World!.') }
-    ]
-  arr[2]();
-});
+}]);
