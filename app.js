@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp', ['ngResource']);
 
-myApp.controller('mainController', ['$scope', '$filter', function($scope, $filter) {
+myApp.controller('mainController', ['$scope', '$filter', '$timeout', function($scope, $filter, $timeout) {
   $scope.name = "";
 
   $scope.lowercaseName = function() {
@@ -17,11 +17,10 @@ $scope.$watch('name', function(newValue, oldValue) {
 
   });
 
-  setTimeout(function() {
-    $scope.$apply(function() {
+  $timeout(function() {
       $scope.name = "Ali Ammaar"
-      console.log('Scope Changed!')
-    });
+      console.log('Scope Changed!');
+
   }, 3000);
 
 }]);
