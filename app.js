@@ -1,26 +1,18 @@
 var myApp = angular.module('myApp', ['ngResource']);
 
-myApp.controller('mainController', ['$scope', '$filter', '$timeout', function($scope, $filter, $timeout) {
+myApp.controller('mainController', ['$scope', '$filter', function($scope, $filter) {
+
   $scope.name = "";
-
   $scope.lowercaseName = function() {
-
     return $filter('lowercase')($scope.name)
-
   };
 
-$scope.$watch('name', function(newValue, oldValue) {
+  $scope.characters = 5;
 
-    console.info('Changed!');
-    console.log('Old:' + oldValue);
-    console.log('New:' + newValue);
-
-  });
-
-  $timeout(function() {
-      $scope.name = "Ali Ammaar"
-      console.log('Scope Changed!');
-
-  }, 3000);
+  $scope.rules = [
+    { rulename: "Must be characters only." },
+    { rulename: "Must be Unique."},
+    { rulename: "Must be awesome!"}
+  ]
 
 }]);
