@@ -15,9 +15,9 @@
   </style>
 
   <!-- load angular via CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
-  <script src="https://code.angularjs.org/1.4.3/angular-resource.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-messages.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script> -->
+  <!-- <script src="https://code.angularjs.org/1.4.3/angular-resource.min.js"></script> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-messages.min.js"></script> -->
   <script src="app.js"></script>
 </head>
 <body>
@@ -37,33 +37,26 @@
 </header>
 
 <div class="container">
+  <div class="row">
+    <div class="col-md-12">
 
-  <div ng-controller="mainController">
-    <div>
+      <a href="#bookmark">Go to bookmark</a>
 
-      <label>What is your name?</label>
-      <input type="text" ng-model="name" />
-
-      <div class="alert" ng-class="{ 'alert-warning': name.length < characters, 'alert-danger' : name.length > characters }" ng-show="name.length !== characters">
-        <div ng-show="name.length < characters">
-          You have less than 5 characters
-        </div>
-        <div ng-show="name.length > characters">
-          You have more than 5 characters
-        </div>
-      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse animi perferendis, officia. Eos nulla laboriosam optio autem fugit, enim consequatur voluptates, corporis amet et magnam repellendus nemo esse. Tenetur, fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque at ducimus impedit quidem ex quo, quos provident porro, iste nihil, culpa aperiam repellendus tempora facilis. Placeat, similique. Esse, beatae.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse animi perferendis, officia. Eos nulla laboriosam optio autem fugit, enim consequatur voluptates, corporis amet et magnam repellendus nemo esse. Tenetur, fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque at ducimus impedit quidem ex quo, quos provident porro, iste nihil, culpa aperiam repellendus tempora facilis. Placeat, similique. Esse, beatae.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse animi perferendis, officia. Eos nulla laboriosam optio autem fugit, enim consequatur voluptates, corporis amet et magnam repellendus nemo esse. Tenetur, fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque at ducimus impedit quidem ex quo, quos provident porro, iste nihil, culpa aperiam repellendus tempora facilis. Placeat, similique. Esse, beatae.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse animi perferendis, officia. Eos nulla laboriosam optio autem fugit, enim consequatur voluptates, corporis amet et magnam repellendus nemo esse. Tenetur, fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque at ducimus impedit quidem ex quo, quos provident porro, iste nihil, culpa aperiam repellendus tempora facilis. Placeat, similique. Esse, beatae.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse animi perferendis, officia. Eos nulla laboriosam optio autem fugit, enim consequatur voluptates, corporis amet et magnam repellendus nemo esse. Tenetur, fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque at ducimus impedit quidem ex quo, quos provident porro, iste nihil, culpa aperiam repellendus tempora facilis. Placeat, similique. Esse, beatae.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse animi perferendis, officia. Eos nulla laboriosam optio autem fugit, enim consequatur voluptates, corporis amet et magnam repellendus nemo esse. Tenetur, fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque at ducimus impedit quidem ex quo, quos provident porro, iste nihil, culpa aperiam repellendus tempora facilis. Placeat, similique. Esse, beatae.</p>
+      <p id="bookmark"><strong>This is bookmark</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse animi perferendis, officia. Eos nulla laboriosam optio autem fugit, enim consequatur voluptates, corporis amet et magnam repellendus nemo esse. Tenetur, fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque at ducimus impedit quidem ex quo, quos provident porro, iste nihil, culpa aperiam repellendus tempora facilis. Placeat, similique. Esse, beatae.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse animi perferendis, officia. Eos nulla laboriosam optio autem fugit, enim consequatur voluptates, corporis amet et magnam repellendus nemo esse. Tenetur, fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque at ducimus impedit quidem ex quo, quos provident porro, iste nihil, culpa aperiam repellendus tempora facilis. Placeat, similique. Esse, beatae.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse animi perferendis, officia. Eos nulla laboriosam optio autem fugit, enim consequatur voluptates, corporis amet et magnam repellendus nemo esse. Tenetur, fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque at ducimus impedit quidem ex quo, quos provident porro, iste nihil, culpa aperiam repellendus tempora facilis. Placeat, similique. Esse, beatae.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse animi perferendis, officia. Eos nulla laboriosam optio autem fugit, enim consequatur voluptates, corporis amet et magnam repellendus nemo esse. Tenetur, fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque at ducimus impedit quidem ex quo, quos provident porro, iste nihil, culpa aperiam repellendus tempora facilis. Placeat, similique. Esse, beatae.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse animi perferendis, officia. Eos nulla laboriosam optio autem fugit, enim consequatur voluptates, corporis amet et magnam repellendus nemo esse. Tenetur, fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque at ducimus impedit quidem ex quo, quos provident porro, iste nihil, culpa aperiam repellendus tempora facilis. Placeat, similique. Esse, beatae.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse animi perferendis, officia. Eos nulla laboriosam optio autem fugit, enim consequatur voluptates, corporis amet et magnam repellendus nemo esse. Tenetur, fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque at ducimus impedit quidem ex quo, quos provident porro, iste nihil, culpa aperiam repellendus tempora facilis. Placeat, similique. Esse, beatae.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse animi perferendis, officia. Eos nulla laboriosam optio autem fugit, enim consequatur voluptates, corporis amet et magnam repellendus nemo esse. Tenetur, fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque at ducimus impedit quidem ex quo, quos provident porro, iste nihil, culpa aperiam repellendus tempora facilis. Placeat, similique. Esse, beatae.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse animi perferendis, officia. Eos nulla laboriosam optio autem fugit, enim consequatur voluptates, corporis amet et magnam repellendus nemo esse. Tenetur, fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque at ducimus impedit quidem ex quo, quos provident porro, iste nihil, culpa aperiam repellendus tempora facilis. Placeat, similique. Esse, beatae.</p>
     </div>
-
-    <hr/>
-    <h3>Hi, {{ lowercaseName() }} </h3>
-    <h1>Rules</h1>
-    <ul>
-      <li ng-repeat="rule in rules">
-        {{rule.name}}
-      </li>
-    </ul>
-    AddRule: <input type="text" ng-model="newRule">
-    <a href="#" class="btn btn-default" ng-click="addRule()">Add New Rule</a>
   </div>
 
 </div>
