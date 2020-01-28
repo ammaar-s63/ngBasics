@@ -39,31 +39,15 @@
 <div class="container">
 
   <div ng-controller="mainController">
-    <div>
 
-      <label>What is your name?</label>
-      <input type="text" ng-model="name" />
+    <h1>{{ name }}</h1>
 
-      <div class="alert" ng-class="{ 'alert-warning': name.length < characters, 'alert-danger' : name.length > characters }" ng-show="name.length !== characters">
-        <div ng-show="name.length < characters">
-          You have less than 5 characters
-        </div>
-        <div ng-show="name.length > characters">
-          You have more than 5 characters
-        </div>
-      </div>
-    </div>
+  </div>
 
-    <hr/>
-    <h3>Hi, {{ lowercaseName() }} </h3>
-    <h1>Rules</h1>
-    <ul>
-      <li ng-repeat="rule in rules">
-        {{rule.name}}
-      </li>
-    </ul>
-    AddRule: <input type="text" ng-model="newRule">
-    <a href="#" class="btn btn-default" ng-click="addRule()">Add New Rule</a>
+  <div ng-controller="secondController">
+
+    <h1>{{ name }}</h1>
+
   </div>
 
 </div>
