@@ -21,9 +21,11 @@ myApp.config(function ($routeProvider) {
 
 });
 
-myApp.controller('mainController', ['$scope', function($scope) {
+
+myApp.controller('mainController', ['$scope', '$log', function($scope, $log) {
 
     $scope.name = 'Main';
+
 
 }]);
 
