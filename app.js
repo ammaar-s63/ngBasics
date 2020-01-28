@@ -1,10 +1,29 @@
-window.addEventListener('hashchange', function () {
+var myApp = angular.module('myApp', ['ngRoute']);
 
+myApp.config(function ($routeProvider) {
 
-  console.log('Hash Chnaged : ' + window.location.hash)
+    $routeProvider
 
-  if (window.location.hash === '#bookmark') {
-    console.log('bookmark is selected.');
-  }
+    .when('/', {
+        templateUrl: 'pages/main.html',
+        controller: 'mainController'
+    })
+
+    .when('/second', {
+        templateUrl: 'pages/second.html',
+        controller: 'secondController'
+    })
 
 });
+
+myApp.controller('mainController', ['$scope', '$log', function($scope, $log) {
+
+    $scope.name = 'Main';
+
+}]);
+
+myApp.controller('secondController', ['$scope', '$log', function($scope, $log) {
+
+    $scope.name = 'Second';
+
+}]);
